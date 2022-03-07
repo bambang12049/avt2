@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="NAMA ANDA"
-            android:inputType="textPassword"
+
             android:minHeight="48dp"
             tools:ignore="MissingConstraints" />
 
