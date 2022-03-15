@@ -1,9 +1,12 @@
 package com.example.avt2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +37,17 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
+        if (item.getItemId() == R.id.mnDaftar)
+        {
+            Intent i = new Intent(getApplicationContext(), Register.class);
+            startActivity(i);
+        }
+    }
+
     public void regis(){
 
         nama=et_nama.getText().toString();
@@ -73,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 a.putString("a", nama.trim());
                 a.putString("b", pass.trim());
 
-                Intent b = new Intent(getApplicationContext(),register.class);
+                Intent b = new Intent(getApplicationContext(), Register.class);
 
                 b.putExtras(a);
                 startActivity(b);
@@ -82,5 +96,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }

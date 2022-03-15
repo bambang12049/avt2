@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class register extends AppCompatActivity {
+public class Register extends AppCompatActivity {
     TextView tv_nama,tv_password;
 
 
