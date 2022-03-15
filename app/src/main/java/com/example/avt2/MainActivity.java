@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(getApplicationContext(), Register.class);
             startActivity(i);
         }
+        return super.onOptionsItemSelected(item);
     }
 
     public void regis(){

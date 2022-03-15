@@ -7,24 +7,71 @@
     tools:context=".Register">
 
     <TextView
-        android:id="@+id/tv_nama"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/Idaftar"
+        android:textSize="15pt"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="94dp" />
 
-    <TextView
-        android:id="@+id/tv_pass"
+    <EditText
+        android:id="@+id/edNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enama"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <EditText
+        android:id="@+id/EdEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eemail"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <EditText
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/epass"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/erepass"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <EditText
+        android:id="@+id/edAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ealamat"
+        android:inputType="textMultiLine|text"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSimpan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557" />
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_save"
+        tools:layout_editor_absoluteX="322dp"
+        tools:layout_editor_absoluteY="633dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
